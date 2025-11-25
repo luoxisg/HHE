@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
@@ -121,14 +121,20 @@
                 解决 AIGC 算力集群的“心脏骤停”风险。将中国磁悬浮飞轮植入新加坡核心关键基础设施。
             </p>
 
+            <!-- [CORRECTION 1] 修正了 SOM 数值 (1.93 -> 193) 和 Target Margin 以匹配后文 -->
+            <!-- [CORRECTION 2] 更新了 Year 3 Target (22 -> 28) 以匹配 Financials 图表 -->
             <div class="flex flex-wrap gap-4 mb-10">
                 <div class="p-4 rounded-xl bg-card border border-white/5 min-w-[140px]">
-                    <div class="text-3xl font-bold text-white">1.93<span class="text-sm text-gray-500 ml-1">M</span></div>
-                    <div class="text-xs text-gray-400 uppercase mt-1" data-en="2030 TAM (SGD)" data-cn="2030 目标市场 (新币)">2030 TAM (SGD)</div>
+                    <div class="text-3xl font-bold text-white">193<span class="text-sm text-gray-500 ml-1">M</span></div>
+                    <div class="text-xs text-gray-400 uppercase mt-1" data-en="2030 SOM (SGD)" data-cn="2030 目标市场 (新币)">2030 目标市场 (新币)</div>
+                </div>
+                <div class="p-4 rounded-xl bg-card border border-blue-500/30 min-w-[140px]">
+                    <div class="text-3xl font-bold text-blue-400">28<span class="text-sm text-gray-500 ml-1">M</span></div>
+                    <div class="text-xs text-blue-400 uppercase mt-1" data-en="Year 3 Rev Target" data-cn="第三年营收目标">第三年营收目标</div>
                 </div>
                 <div class="p-4 rounded-xl bg-card border border-green-500/30 min-w-[140px]">
                     <div class="text-3xl font-bold text-accent">35<span class="text-sm text-gray-500 ml-1">%</span></div>
-                    <div class="text-xs text-accent uppercase mt-1" data-en="Target Margin" data-cn="目标毛利率">Target Margin</div>
+                    <div class="text-xs text-accent uppercase mt-1" data-en="Gross Margin" data-cn="目标毛利率">目标毛利率</div>
                 </div>
             </div>
 
@@ -136,8 +142,8 @@
                 <button onclick="document.getElementById('market-opps').scrollIntoView()" class="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-bold shadow-lg shadow-blue-600/20 transition-all transform hover:-translate-y-1 flex items-center gap-2">
                     <span data-en="Market Analysis" data-cn="市场全景分析">Market Analysis</span> <i class="fa-solid fa-chart-pie"></i>
                 </button>
-                <button onclick="document.getElementById('competition').scrollIntoView()" class="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 text-white font-bold transition-all">
-                    <span data-en="Global Competition" data-cn="国际竞争分析">Global Competition</span>
+                <button onclick="document.getElementById('financials').scrollIntoView()" class="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 text-white font-bold transition-all">
+                    <span data-en="Investment Ask" data-cn="融资方案">Investment Ask</span>
                 </button>
             </div>
         </div>
@@ -162,7 +168,7 @@
         </p>
 
         <div class="grid lg:grid-cols-3 gap-8 fade-up">
-            <!-- Segment 1: Brownfield Retrofit -->
+            <!-- Segment 1 -->
             <div class="bg-card border-t-4 border-orange-500 p-6 rounded-2xl hover:bg-white/5 transition-all">
                 <div class="flex justify-between items-start mb-4">
                     <div class="p-3 bg-orange-500/10 rounded-lg text-orange-500 text-2xl"><i class="fa-solid fa-rotate"></i></div>
@@ -175,7 +181,7 @@
                 </p>
             </div>
 
-            <!-- Segment 2: Greenfield Growth -->
+            <!-- Segment 2 -->
             <div class="bg-card border-t-4 border-blue-500 p-6 rounded-2xl hover:bg-white/5 transition-all">
                 <div class="flex justify-between items-start mb-4">
                     <div class="p-3 bg-blue-500/10 rounded-lg text-blue-500 text-2xl"><i class="fa-solid fa-seedling"></i></div>
@@ -188,7 +194,7 @@
                 </p>
             </div>
 
-            <!-- Segment 3: High-Tech Industrial -->
+            <!-- Segment 3 -->
             <div class="bg-card border-t-4 border-cyan-500 p-6 rounded-2xl hover:bg-white/5 transition-all">
                 <div class="flex justify-between items-start mb-4">
                     <div class="p-3 bg-cyan-500/10 rounded-lg text-cyan-500 text-2xl"><i class="fa-solid fa-microchip"></i></div>
@@ -265,12 +271,64 @@
     </div>
 </section>
 
-<!-- 3. 产品细节描述 -->
-<section id="product-tech" class="py-20 bg-card/30">
+<!-- 3. Pipeline Analysis (Consistent with Revenue) -->
+<section id="pipeline" class="py-20 bg-card/30">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-6 flex items-center gap-3 fade-up">
+            <span class="w-1 h-8 bg-blue-500 rounded-full"></span>
+            <span data-en="Strategic Pipeline (Singapore Focus)" data-cn="新加坡战略项目管线">Strategic Pipeline (Singapore Focus)</span>
+        </h2>
+        
+        <!-- [CORRECTION 4] 更新管线总额为 45M 以覆盖 3年营收预测 (42.5M) -->
+        <div class="overflow-x-auto rounded-2xl border border-white/10 shadow-2xl fade-up bg-card">
+            <table class="w-full project-table">
+                <thead>
+                    <tr class="bg-dark/50">
+                        <th data-en="Sub-Project Name" data-cn="子项目名称">Sub-Project Name</th>
+                        <th data-en="Target Application" data-cn="目标应用场景">Target Application</th>
+                        <th data-en="Product Model" data-cn="推荐产品型号">Product Model</th>
+                        <th data-en="Est. Capacity" data-cn="预计容量 (3年)">Est. Capacity</th>
+                        <th class="text-right" data-en="Est. Sales (SGD)" data-cn="预计销售额 (新币)">Est. Sales (SGD)</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-300">
+                    <tr>
+                        <td class="font-bold text-white">700MW Jurong DC Park</td>
+                        <td>Green Mark Platinum UPS</td>
+                        <td><span class="px-2 py-1 rounded bg-blue-500/10 text-blue-400 text-xs border border-blue-500/20">Galaxy (2MW)</span></td>
+                        <td>24 MW</td>
+                        <td class="text-right font-bold text-accent">25.5 M</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold text-white">GlobalFoundries Exp.</td>
+                        <td>Voltage Sag Immunity</td>
+                        <td><span class="px-2 py-1 rounded bg-cyan-500/10 text-cyan-400 text-xs border border-cyan-500/20">Star River (1MW)</span></td>
+                        <td>12 MW</td>
+                        <td class="text-right font-bold text-accent">11.5 M</td>
+                    </tr>
+                    <tr>
+                        <td class="font-bold text-white">Keppel/JTC Microgrid</td>
+                        <td>Freq. Reg (Hydrogen)</td>
+                        <td><span class="px-2 py-1 rounded bg-orange-500/10 text-orange-400 text-xs border border-orange-500/20">Containerized</span></td>
+                        <td>5 MW</td>
+                        <td class="text-right font-bold text-accent">8.0 M</td>
+                    </tr>
+                    <tr class="bg-white/5 font-bold">
+                        <td colspan="4" class="text-right text-white" data-en="Total Pipeline Value (3-Year)" data-cn="管线总价值 (3年)">Total Pipeline Value (3-Year)</td>
+                        <td class="text-right text-blue-400">45.0 M</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- 4. 产品细节描述 -->
+<section id="product-tech" class="py-20 bg-dark">
     <div class="max-w-7xl mx-auto px-6">
         <h2 class="text-3xl font-bold mb-8 flex items-center gap-3 fade-up">
             <span class="w-1 h-8 bg-blue-500 rounded-full"></span>
-            <span data-en="Product Specification & Portfolio" data-cn="产品矩阵与核心参数">产品矩阵与核心参数</span>
+            <span data-en="Product Specification & Portfolio" data-cn="产品矩阵与核心参数">Product Specification & Portfolio</span>
         </h2>
 
         <div class="grid md:grid-cols-3 gap-6 mb-12 fade-up">
@@ -293,7 +351,7 @@
             </div>
 
             <div class="bg-card border border-purple-500/30 rounded-2xl p-6 hover:bg-purple-900/10 transition-colors flex flex-col justify-center">
-                <h3 class="text-xl font-bold text-white mb-4" data-en="Key Performance Specs" data-cn="核心性能指标">核心性能指标</h3>
+                <h3 class="text-xl font-bold text-white mb-4" data-en="Key Performance Specs" data-cn="核心性能指标">Key Performance Specs</h3>
                 <div class="space-y-4">
                     <div class="flex justify-between items-end border-b border-white/5 pb-2">
                         <span class="text-gray-400 text-sm">Response Time</span>
@@ -309,18 +367,18 @@
     </div>
 </section>
 
-<!-- 4. 国际竞争分析 -->
-<section id="competition" class="py-20 bg-dark border-y border-white/5">
+<!-- 5. 国际竞争分析 -->
+<section id="competition" class="py-20 bg-card/30 border-y border-white/5">
     <div class="max-w-7xl mx-auto px-6">
         <h2 class="text-3xl font-bold mb-8 flex items-center gap-3 fade-up">
             <span class="w-1 h-8 bg-orange-500 rounded-full"></span>
-            <span data-en="Global Competition Analysis" data-cn="国际竞争格局分析">国际竞争格局分析</span>
+            <span data-en="Global Competition Analysis" data-cn="国际竞争格局分析">Global Competition Analysis</span>
         </h2>
 
         <div class="grid lg:grid-cols-2 gap-12 fade-up">
             <div class="bg-card rounded-2xl border border-white/10 overflow-hidden">
                 <div class="p-6 border-b border-white/10 bg-dark/50">
-                    <h3 class="text-xl font-bold text-white" data-en="HHE vs Global Giants" data-cn="HHE vs 国际巨头">HHE vs 国际巨头</h3>
+                    <h3 class="text-xl font-bold text-white" data-en="HHE vs Global Giants" data-cn="HHE vs 国际巨头">HHE vs Global Giants</h3>
                 </div>
                 <table class="w-full comp-table">
                     <thead>
@@ -358,7 +416,7 @@
             </div>
 
             <div class="bg-card p-6 rounded-2xl border border-white/10 flex flex-col">
-                <h3 class="text-xl font-bold text-white mb-4" data-en="Competitiveness Radar" data-cn="综合竞争力雷达">综合竞争力雷达</h3>
+                <h3 class="text-xl font-bold text-white mb-4" data-en="Competitiveness Radar" data-cn="综合竞争力雷达">Competitiveness Radar</h3>
                 <div class="flex-grow relative min-h-[300px]">
                     <canvas id="radarChart"></canvas>
                 </div>
@@ -367,59 +425,105 @@
     </div>
 </section>
 
-<!-- 5. DCDeepTech 的优势 -->
+<!-- 6. DCDeepTech 的优势 -->
 <section id="dcdeeptech" class="py-20 bg-gradient-to-b from-card to-dark border-y border-white/5">
     <div class="max-w-7xl mx-auto px-6">
         <h2 class="text-3xl font-bold mb-12 flex items-center gap-3 fade-up">
             <span class="w-1 h-8 bg-purple-500 rounded-full"></span>
-            <span data-en="Why DCDeepTech?" data-cn="DCDeepTech 的核心优势">DCDeepTech 的核心优势</span>
+            <span data-en="Why DCDeepTech?" data-cn="DCDeepTech 的核心优势">Why DCDeepTech?</span>
         </h2>
 
         <div class="grid lg:grid-cols-3 gap-8 fade-up">
             <div class="relative p-8 rounded-2xl bg-white/5 border border-white/10 group hover:bg-white/10 transition-all">
                 <div class="absolute -top-6 left-8 w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center text-white text-xl shadow-lg shadow-purple-600/30"><i class="fa-solid fa-network-wired"></i></div>
-                <h3 class="mt-6 text-xl font-bold text-white mb-3" data-en="Ecosystem Connector" data-cn="生态连接者">生态连接者</h3>
-                <p class="text-gray-400 text-sm leading-relaxed" data-en="We connect HHE to JTC, EMA, and NUS." data-cn="我们直通 JTC（业主）、EMA（监管方）和 NUS（技术验证方）。">我们直通 JTC（业主）、EMA（监管方）和 NUS（技术验证方）。</p>
+                <h3 class="mt-6 text-xl font-bold text-white mb-3" data-en="Ecosystem Connector" data-cn="生态连接者">Ecosystem Connector</h3>
+                <p class="text-gray-400 text-sm leading-relaxed" data-en="We connect HHE to JTC, EMA, and NUS." data-cn="我们直通 JTC（业主）、EMA（监管方）和 NUS（技术验证方）。">We connect HHE to JTC, EMA, and NUS.</p>
             </div>
             <div class="relative p-8 rounded-2xl bg-white/5 border border-white/10 group hover:bg-white/10 transition-all">
                 <div class="absolute -top-6 left-8 w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center text-white text-xl shadow-lg shadow-blue-600/30"><i class="fa-solid fa-language"></i></div>
-                <h3 class="mt-6 text-xl font-bold text-white mb-3" data-en="Tech Translation" data-cn="技术转译与合规">技术转译与合规</h3>
-                <p class="text-gray-400 text-sm leading-relaxed" data-en="Handling PE endorsement and standards bridging." data-cn="跨越中新标准鸿沟，全权负责 PE 签章与合规流程。">跨越中新标准鸿沟，全权负责 PE 签章与合规流程。</p>
+                <h3 class="mt-6 text-xl font-bold text-white mb-3" data-en="Tech Translation" data-cn="技术转译与合规">Tech Translation</h3>
+                <p class="text-gray-400 text-sm leading-relaxed" data-en="Handling PE endorsement and standards bridging." data-cn="跨越中新标准鸿沟，全权负责 PE 签章与合规流程。">Handling PE endorsement and standards bridging.</p>
             </div>
             <div class="relative p-8 rounded-2xl bg-white/5 border border-white/10 group hover:bg-white/10 transition-all">
                 <div class="absolute -top-6 left-8 w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-white text-xl shadow-lg shadow-green-600/30"><i class="fa-solid fa-shoe-prints"></i></div>
-                <h3 class="mt-6 text-xl font-bold text-white mb-3" data-en="Boots on the Ground" data-cn="本地化执行团队">本地化执行团队</h3>
-                <p class="text-gray-400 text-sm leading-relaxed" data-en="Dedicated team in Woodlands and Jurong." data-cn="驻扎在兀兰和裕廊的专属团队，解决远程运维痛点。">驻扎在兀兰和裕廊的专属团队，解决远程运维痛点。</p>
+                <h3 class="mt-6 text-xl font-bold text-white mb-3" data-en="Boots on the Ground" data-cn="本地化执行团队">Boots on the Ground</h3>
+                <p class="text-gray-400 text-sm leading-relaxed" data-en="Dedicated team in Woodlands and Jurong." data-cn="驻扎在兀兰和裕廊的专属团队，解决远程运维痛点。">Dedicated team in Woodlands and Jurong.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- 6. 财务概览 (MBA级分解) -->
+<!-- 7. 财务概览 & 融资需求 (Investment Ask) -->
 <section id="financials" class="py-20 bg-dark">
     <div class="max-w-7xl mx-auto px-6">
         <div class="grid lg:grid-cols-2 gap-12 fade-up">
-            <!-- TCO Chart -->
-            <div>
-                <h2 class="text-3xl font-bold mb-6 text-white" data-en="TCO: The 20-Year Battle" data-cn="TCO：20年的决战">TCO: The 20-Year Battle</h2>
-                <p class="text-gray-400 mb-4" data-en="Li-ion is cheap initially but lasts only 7 years. Flywheel lasts 20 years with zero HVAC cost." data-cn="锂电池初始便宜但寿命仅7年。飞轮寿命20年且零空调成本。">
-                    锂电池初始便宜但寿命仅7年。飞轮寿命20年且零空调成本。
-                </p>
-                <div class="bg-card p-6 rounded-xl border border-white/10 h-96">
-                    <canvas id="tcoChart"></canvas>
+            
+            <!-- Left: TCO & Investment Ask -->
+            <div class="space-y-8">
+                <!-- Investment Ask (New) -->
+                <div class="bg-gradient-to-r from-blue-900/40 to-purple-900/40 p-6 rounded-2xl border border-blue-500/30">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-white" data-en="Investment Opportunity" data-cn="融资需求 (Seed Round)">Investment Opportunity</h3>
+                            <p class="text-xs text-gray-400 mt-1" data-en="Fueling the Singapore Market Entry" data-cn="助力新加坡市场准入与启动">Fueling the Singapore Market Entry</p>
+                        </div>
+                        <span class="px-3 py-1 bg-blue-500 text-white font-bold rounded-lg">SGD 2.0 M</span>
+                    </div>
+                    
+                    <!-- [CORRECTION 3] 融资逻辑与 2026 营收匹配 -->
+                    <div class="grid grid-cols-3 gap-2 text-center text-xs mb-4">
+                        <div class="p-2 bg-black/30 rounded border border-white/5">
+                            <span class="block text-gray-400">Use of Funds</span>
+                            <strong class="text-white">Market Entry</strong>
+                        </div>
+                        <div class="p-2 bg-black/30 rounded border border-white/5">
+                            <span class="block text-gray-400">Runway</span>
+                            <strong class="text-white">18 Months</strong>
+                        </div>
+                        <div class="p-2 bg-black/30 rounded border border-white/5">
+                            <span class="block text-gray-400">Target</span>
+                            <strong class="text-accent">SGD 2.5M Rev</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <div class="flex justify-between">
+                            <span>Working Capital (Hardware)</span>
+                            <span class="text-white font-bold">50%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 h-1.5 rounded-full"><div class="bg-blue-500 h-1.5 rounded-full" style="width: 50%"></div></div>
+                        
+                        <div class="flex justify-between">
+                            <span>Team & Operations</span>
+                            <span class="text-white font-bold">30%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 h-1.5 rounded-full"><div class="bg-purple-500 h-1.5 rounded-full" style="width: 30%"></div></div>
+                        
+                        <div class="flex justify-between">
+                            <span>Marketing & Certifications</span>
+                            <span class="text-white font-bold">20%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 h-1.5 rounded-full"><div class="bg-accent h-1.5 rounded-full" style="width: 20%"></div></div>
+                    </div>
+                </div>
+
+                <!-- TCO Chart -->
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-4" data-en="Customer ROI (TCO)" data-cn="客户投资回报 (TCO)">Customer ROI (TCO)</h3>
+                    <div class="bg-card p-4 rounded-xl border border-white/10 h-64">
+                        <canvas id="tcoChart"></canvas>
+                    </div>
                 </div>
             </div>
             
-            <!-- Revenue Breakdown (MBA Grade) -->
+            <!-- Right: Revenue Breakdown -->
             <div>
                 <h2 class="text-3xl font-bold mb-6 text-white" data-en="Financial Projections (3-Year)" data-cn="三年财务预测 (MBA级分解)">Financial Projections (3-Year)</h2>
                 
-                <!-- Chart Container -->
-                <div class="bg-card p-6 rounded-xl border border-white/10 h-72 mb-6">
+                <div class="bg-card p-6 rounded-xl border border-white/10 h-80 mb-6">
                     <canvas id="revenueChart"></canvas>
                 </div>
 
-                <!-- Logic/Assumptions Table -->
                 <div class="bg-white/5 rounded-xl p-4 border border-white/5">
                     <h4 class="text-sm font-bold text-gray-300 mb-3 border-b border-white/10 pb-2" data-en="Growth Logic & Assumptions" data-cn="增长逻辑与财务假设">Growth Logic & Assumptions</h4>
                     <div class="grid grid-cols-3 gap-4 text-xs">
@@ -445,31 +549,31 @@
     </div>
 </section>
 
-<!-- 7. 风险管控 -->
+<!-- 8. 风险管控 -->
 <section id="risks" class="py-20 bg-card/30">
     <div class="max-w-7xl mx-auto px-6">
         <h2 class="text-3xl font-bold mb-8 flex items-center gap-3 fade-up">
             <span class="w-1 h-8 bg-orange-500 rounded-full"></span>
-            <span data-en="Risk Management" data-cn="风险管控">风险管控</span>
+            <span data-en="Risk Management" data-cn="风险管控">Risk Management</span>
         </h2>
         <div class="grid md:grid-cols-3 gap-6 fade-up">
             <div class="bg-card p-6 rounded-2xl risk-card risk-high">
                 <h3 class="font-bold text-white mb-2" data-en="Decision Risk" data-cn="决策风险">Decision Risk</h3>
-                <p class="text-sm text-gray-400 mb-4" data-en="Hesitation due to unfamiliarity with SG." data-cn="因不熟悉新加坡法律与商业环境而导致的战略迟疑。">因不熟悉新加坡法律与商业环境而导致的战略迟疑。</p>
+                <p class="text-sm text-gray-400 mb-4" data-en="Hesitation due to unfamiliarity with SG." data-cn="因不熟悉新加坡法律与商业环境而导致的战略迟疑。">Hesitation due to unfamiliarity with SG.</p>
                 <div class="mt-auto p-3 bg-red-900/20 rounded border border-red-500/20 text-xs text-red-200">
                     <span data-en="Mitigation: Local Agent + Pilot" data-cn="应对：本地代理 + 小步快跑">Mitigation: Local Agent + Pilot</span>
                 </div>
             </div>
             <div class="bg-card p-6 rounded-2xl risk-card risk-med">
                 <h3 class="font-bold text-white mb-2" data-en="Technical Risk" data-cn="技术风险">Technical Risk</h3>
-                <p class="text-sm text-gray-400 mb-4" data-en="High humidity affecting electronics." data-cn="高湿高盐雾环境可能影响电子元件寿命。">高湿高盐雾环境可能影响电子元件寿命。</p>
+                <p class="text-sm text-gray-400 mb-4" data-en="High humidity affecting electronics." data-cn="高湿高盐雾环境可能影响电子元件寿命。">High humidity affecting electronics.</p>
                 <div class="mt-auto p-3 bg-orange-900/20 rounded border border-orange-500/20 text-xs text-orange-200">
                     <span data-en="Mitigation: Coating & STDCT Pilot" data-cn="应对：三防涂层 & 试点验证">Mitigation: Coating & STDCT Pilot</span>
                 </div>
             </div>
             <div class="bg-card p-6 rounded-2xl risk-card risk-low">
                 <h3 class="font-bold text-white mb-2" data-en="Compliance Risk" data-cn="合规风险">Compliance Risk</h3>
-                <p class="text-sm text-gray-400 mb-4" data-en="PE sign-off or SEMI failure." data-cn="PE 签章或 SEMI 认证失败。">PE 签章或 SEMI 认证失败。</p>
+                <p class="text-sm text-gray-400 mb-4" data-en="PE sign-off or SEMI failure." data-cn="PE 签章或 SEMI 认证失败。">PE sign-off or SEMI failure.</p>
                 <div class="mt-auto p-3 bg-green-900/20 rounded border border-green-500/20 text-xs text-green-200">
                     <span data-en="Mitigation: Mutual Recognition" data-cn="应对：中新认证互认">Mitigation: Mutual Recognition</span>
                 </div>
@@ -478,29 +582,29 @@
     </div>
 </section>
 
-<!-- 8. 战略附件 -->
+<!-- 9. 战略附件 -->
 <section id="annex" class="py-20 bg-dark border-t border-white/5">
     <div class="max-w-7xl mx-auto px-6">
         <h2 class="text-3xl font-bold mb-8 flex items-center gap-3 fade-up">
             <span class="w-1 h-8 bg-gray-500 rounded-full"></span>
-            <span data-en="Strategic Annex" data-cn="战略附件：深度案例与细节">战略附件：深度案例与细节</span>
+            <span data-en="Strategic Annex" data-cn="战略附件：深度案例与细节">Strategic Annex</span>
         </h2>
 
         <div class="grid md:grid-cols-2 gap-8 fade-up">
             <div class="bg-card border border-red-500/30 rounded-2xl p-8 relative overflow-hidden">
                 <div class="absolute top-0 right-0 p-4 opacity-10"><i class="fa-solid fa-microchip text-9xl text-red-500"></i></div>
-                <h3 class="text-xl font-bold text-white mb-4" data-en="Case Study: The GlobalFoundries Paradox" data-cn="案例研究：格芯悖论">案例研究：格芯悖论</h3>
-                <p class="text-gray-300 text-sm mb-2"><strong>背景：</strong> HHE 曾成功交付 16MW 动态 UPS 系统给顶级晶圆厂。</p>
-                <p class="text-gray-300 text-sm"><strong>风险：</strong> 缺乏长期运行数据 (MTBF)。应对策略：强调工程交付能力，并利用中石油数据背书。</p>
+                <h3 class="text-xl font-bold text-white mb-4" data-en="Case Study: The GlobalFoundries Paradox" data-cn="案例研究：格芯悖论">Case Study: The GlobalFoundries Paradox</h3>
+                <p class="text-gray-300 text-sm mb-2"><strong>Context:</strong> HHE delivered a 16MW Dynamic UPS system to a top-tier fab.</p>
+                <p class="text-gray-300 text-sm"><strong>Risk:</strong> Data void due to project halt. Mitigation: Emphasize engineering capability & CNPC data.</p>
             </div>
 
             <div class="bg-card border border-green-500/30 rounded-2xl p-8 relative overflow-hidden">
                 <div class="absolute top-0 right-0 p-4 opacity-10"><i class="fa-solid fa-certificate text-9xl text-green-500"></i></div>
-                <h3 class="text-xl font-bold text-white mb-4" data-en="Deep Dive: Certification Roadmap" data-cn="深度解析：合规认证路线图">深度解析：合规认证路线图</h3>
+                <h3 class="text-xl font-bold text-white mb-4" data-en="Deep Dive: Certification Roadmap" data-cn="深度解析：合规认证路线图">Deep Dive: Certification Roadmap</h3>
                 <ul class="text-sm text-gray-300 space-y-2">
-                    <li><strong class="text-green-400">SEMI F47:</strong> 必须 (Mandatory)，预留 SGD 20k。</li>
-                    <li><strong class="text-blue-400">IEC 62040-3:</strong> 互认 (Mutual Rec.)，节省开支。</li>
-                    <li><strong class="text-orange-400">PE Endorsement:</strong> 关键路径，已建立 PE 网络。</li>
+                    <li><strong class="text-green-400">SEMI F47:</strong> Mandatory, SGD 20k reserve.</li>
+                    <li><strong class="text-blue-400">IEC 62040-3:</strong> Mutual Recognition saves cost.</li>
+                    <li><strong class="text-orange-400">PE Endorsement:</strong> Critical path established.</li>
                 </ul>
             </div>
         </div>
@@ -514,12 +618,12 @@
             <span>DCDeepTech</span> <span class="text-blue-500">x</span> <span>HHE</span>
         </div>
         <p class="text-gray-500 text-sm mb-6" data-en="Confidential Investment Proposal. Do not distribute." data-cn="机密投资提案。请勿外传。">
-            机密投资提案。请勿外传。
+            Confidential Investment Proposal. Do not distribute.
         </p>
         <div class="flex justify-center gap-6 text-gray-600 text-xs">
             <span>© 2025 DCDeepTech</span>
-            <a href="#" class="hover:text-white">隐私</a>
-            <a href="#" class="hover:text-white">联系</a>
+            <a href="#" class="hover:text-white">Privacy</a>
+            <a href="#" class="hover:text-white">Contact</a>
         </div>
     </div>
 </footer>
@@ -592,7 +696,7 @@
         });
     }
 
-    // --- 3. Revenue Breakdown Chart (UPDATED: Stacked) ---
+    // --- 3. Revenue Breakdown Chart (Matches 28M Total) ---
     function initRevenue() {
         const ctx = document.getElementById('revenueChart').getContext('2d');
         revenueChart = new Chart(ctx, {
@@ -602,19 +706,19 @@
                 datasets: [
                     {
                         label: 'CapEx (Hardware)',
-                        data: [2.25, 9.6, 19.6], // 90%, 80%, 70% share approx
+                        data: [2.25, 9.6, 19.6], // Sum: 2.5, 12, 28
                         backgroundColor: '#3b82f6',
                         stack: 'Stack 0'
                     },
                     {
                         label: 'OpEx (SLA)',
-                        data: [0.25, 1.8, 5.6], // Recurring grows
+                        data: [0.25, 1.8, 5.6],
                         backgroundColor: '#10b981',
                         stack: 'Stack 0'
                     },
                     {
                         label: 'EaaS (Leasing)',
-                        data: [0, 0.6, 2.8], // Starts late
+                        data: [0, 0.6, 2.8],
                         backgroundColor: '#f59e0b',
                         stack: 'Stack 0'
                     }
